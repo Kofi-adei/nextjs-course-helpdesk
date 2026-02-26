@@ -13,7 +13,7 @@ const Navbar = () => {
                     src={Logo}
                     alt='helpdesk logo'
                     width={70}
-                    quality={100}
+                    quality={[100, 75]}
                     placeholder='blur'
                 />
                 <h1>Kofi Helpdesk</h1>
