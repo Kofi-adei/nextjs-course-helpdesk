@@ -1,6 +1,6 @@
 import TicketsList from "@/app/tickets/TicketsList";
 
-const News = () => {
+const Tickets = () => {
     return (
         <main>
             <nav>
@@ -15,4 +15,4 @@ const News = () => {
     );
 };
 
-export default News;
+export default Tickets;
