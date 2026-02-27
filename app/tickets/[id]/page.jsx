@@ -1,3 +1,17 @@
+//Creating a 404 page when a user selects a ticket page that doesn't exist
+import {notFound} from "next/navigation";
+
+export const dynamicParams = false;
+
+//Enabling caching of ticket detail pages via static rendering
+export const generateStaticParams = async () => {
+    const res = await fetch('http://localhost:4000/tickets');
+    const tickets = await res.json();
+
+    return tickets.map((ticket) => ({
+        id: ticket.id,
+    }))
+}
 
 const getTicket = async (id) => {
     const res = await fetch(`http://localhost:4000/tickets/${id}`, {
@@ -5,7 +19,7 @@ const getTicket = async (id) => {
     });
 
     if (!res.ok) {
-        throw new Error(`Failed to fetch tickets with id ${id}`);
+        notFound();
     }
     return res.json();
 }
