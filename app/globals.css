@@ -27,7 +27,8 @@ nav {
     pb-4
     border-b-2 border-gray-200
     flex items-center gap-2.5
-    my-10 mx-auto;
+    my-10 mx-auto
+    md:gap-5;
 }
 nav h1 {
     @apply text-base;
@@ -42,10 +43,12 @@ main nav {
     @apply border-0;
 }
 .navlinks {
-    @apply text-xs;
+    @apply text-xs
+    md:text-lg;
 }
 .logo {
-    @apply w-10;
+    @apply w-10
+    md:w-20;
 }
 
 /* button styles */
@@ -75,7 +78,8 @@ form {
     rounded-md
     block
     mx-auto
-    min-w-fit w-1/4;
+    min-w-fit w-1/4
+    md:w-1/2;
 }
 form label {
     @apply block;
