@@ -1,7 +1,7 @@
 //Creating a 404 page when a user selects a ticket page that doesn't exist
 import {notFound} from "next/navigation";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 //Enabling caching of ticket detail pages via static rendering
 export const generateStaticParams = async () => {
@@ -27,6 +27,7 @@ const getTicket = async (id) => {
 const TicketDetail = async ({ params }) => {
     const { id } = await params;
     const ticket = await getTicket(id);
+
     return (
         <main>
             <nav>
