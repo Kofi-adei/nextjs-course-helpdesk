@@ -1,4 +1,6 @@
 import TicketsList from "@/app/tickets/TicketsList";
+import {Suspense} from "react";
+import Loading from "@/app/loading";
 
 const Tickets = () => {
     return (
@@ -10,7 +12,9 @@ const Tickets = () => {
                 </div>
             </nav>
 
-            <TicketsList />
+            <Suspense fallback={<Loading />}>
+                <TicketsList/>
+            </Suspense>
         </main>
     );
 };
