@@ -33,7 +33,7 @@ const CreateForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className='w-1/2 mx-auto'>
+        <form onSubmit={handleSubmit} >
             <label>
                 <span>Title:</span>
                 <input

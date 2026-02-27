@@ -34,6 +34,13 @@
       "body": "blaaaaaaaaa",
       "priority": "low",
       "user_email": "kofihelp@gmail.com"
+    },
+    {
+      "id": "3cd5",
+      "title": "Finish ticket",
+      "body": "Built my first next.js project",
+      "priority": "medium",
+      "user_email": "kofihelp@gmail.com"
     }
   ]
 }

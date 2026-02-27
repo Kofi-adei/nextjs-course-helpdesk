@@ -12,14 +12,14 @@ const Navbar = () => {
                 <Image
                     src={Logo}
                     alt='helpdesk logo'
-                    width={70}
+                    className='logo'
                     quality={[100, 75]}
                     placeholder='blur'
                 />
                 <h1>Kofi Helpdesk</h1>
-                <Link href='/'>Dashboard</Link>
-                <Link href='/tickets'>Tickets</Link>
-                <Link href='/tickets/create'>Create</Link>
+                <Link href='/' className='navlinks'>Dashboard</Link>
+                <Link href='/tickets' className='navlinks'>Tickets</Link>
+                <Link href='/tickets/create' className='navlinks'>Create</Link>
             </nav>
         </>
     );
